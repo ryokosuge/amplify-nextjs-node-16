@@ -9,6 +9,10 @@ frontend:
   phases:
     preBuild:
       commands:
+        - nvm install 16.13.2
+        - nvm use 16.13.2
+        - node -v
+        - npm list -g
         - npm ci
     build:
       commands:
